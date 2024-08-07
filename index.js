@@ -54,6 +54,7 @@ const mainMenu = async () => {
                     type: 'input',
                     name: 'manager_id',
                     message: 'Enter the manager ID (leave blank if none):',
+                    default: null
                 }
             ]);
             await addEmployee(
