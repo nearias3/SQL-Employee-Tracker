@@ -3,7 +3,7 @@
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Description
-This repo contains a command-line application to manage a company's employee database using Node.js, Inquirer, and PostgreSQL. It allows users to view and manage the departments, roles, and employees within a company. 
+This repo contains a command-line application to manage a company's employee database using Node.js, Inquirer, and PostgreSQL. It allows users to view and manage the departments, roles, and employees within a company. The application utilized several coding skills from this module, primarily Node.js for the server-side part of the application and inquirer for the interactive command-line. This app also utilizes SQL and PostgreSQL as the database management system and dotenv to manage and secure sensitive information.
 
 
 ## Table of Contents
