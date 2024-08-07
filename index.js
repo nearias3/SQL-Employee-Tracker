@@ -57,6 +57,9 @@ const mainMenu = async () => {
                     default: null
                 }
             ]);
+
+            const managerId = employeeAnswers.manager_id ? employeeAnswers.manager_id : null;
+
             await addEmployee(
                 employeeAnswers.first_name, 
                 employeeAnswers.last_name,
