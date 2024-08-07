@@ -104,6 +104,14 @@ const mainMenu = async () => {
                     message: 'Enter the department ID for this role:'
                 }
             ]);
+
+            const validDepartments = await getDepartments();
+            const departmentIds = validDepartments.map(dept => dept.id);
+            if (!departmentIds.includes(parseInt(roleAnswers.department_id, 0))) {
+                console.log('Invalid department ID. Please enter a valid ID or create a new one in the main menu.');
+                break;
+            }
+
             await addRole(
                 roleAnswers.title, 
                 roleAnswers.salary, 
