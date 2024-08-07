@@ -34,7 +34,7 @@ const addRole = async (title, salary, department_id) => {
 const addEmployee = async (first_name, last_name, role_id, manager_id) => {
   const res = await pool.query(
     "INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ($1, $2, $3, $4) RETURNING *",
-    [first_name, last_name, role_id, manager_id]
+    [first_name, last_name, role_id, manager_id || null] 
   );
   return res.rows[0];
 };
